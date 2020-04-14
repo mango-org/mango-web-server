@@ -1,0 +1,19 @@
+name: mango-web-server
+version: 1.0.0
+description: Fork of jphp-httpserver-ext with cool stuf :^)
+
+jetty:
+  version: 9.4.27.v20200227
+
+plugins:
+  - Gradle
+
+gradle:
+  deps:
+    - "org.eclipse.jetty:jetty-server:%jetty.version%"
+    - "org.eclipse.jetty:jetty-security:%jetty.version%"
+    - "org.eclipse.jetty.websocket:websocket-server:%jetty.version%"
+    - "commons-io:commons-io:2.6"
+
+deps:
+  jphp-runtime: '*'
